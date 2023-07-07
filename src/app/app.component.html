@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="columns is-centered">
+    <div class="box column is-one-third">
+      <h1 class="title has-text-centered">Typing Challenge</h1>
+
+      <p class="has-text-centered">
+        <span
+          [class]="onCheck(letter, typedText[i])"
+          class="is-size-4"
+          *ngFor="let letter of randomText.split(''); let i = index"
+          >{{ letter }}</span
+        >
+      </p>
+
+      <div class="field">
+        <input type="text" class="input" [(ngModel)]="typedText" />
+      </div>
+
+      <div class="box has-text-centered" *ngIf="typedText == randomText">
+        <h1 class="title">You did great!</h1>
+        <div class="">
+          <button (click)="onClickPara()">Click for more</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

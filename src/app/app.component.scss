@@ -1,0 +1,26 @@
+.correct {
+  color: #00c600;
+}
+
+.incorrect {
+  color: red;
+  background-color: #ff000011;
+}
+
+button {
+  background-color: blueviolet;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border: 1px solid purple;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  transition: 0.3s ease-out;
+
+  &:hover {
+    background-color: white;
+    color: blueviolet;
+    border-radius: 0rem;
+    border: 1px solid purple;
+    transition: 0.3s ease-out;
+  }
+}
